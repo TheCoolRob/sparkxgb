@@ -18,7 +18,7 @@ spark_dependencies <- function(spark_version, scala_version, ...) {
         "ml.dmlc:xgboost4j-spark_2.11:1.1.2"
       } else if (scala_version == "2.12") {
         # This is the last known version of xgboost4j built with Scala 2.12.
-        "ml.dmlc:xgboost4j-spark_2.12:1.3.1"
+        "ml.dmlc:xgboost4j-spark_2.12:1.7.6"
       } else {
         # There is no known support for other versions of Scala at the moment.
         stop(sprintf("Unsupported Scala version '%s'.", scala_version))
